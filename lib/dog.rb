@@ -39,5 +39,5 @@ class Dog
       dog = self.new(name: name,breed: breed)
       dog.save
   end 
-  end
+  
 end 
