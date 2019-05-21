@@ -35,10 +35,8 @@ class Dog
         self
   end 
   
-  def self.create(att_hash)
-    att_hash.each do |key,value|
-      
-      dog = self.send(("#{key}"),value)
+  def self.create(name:,breed:)
+      dog = self.new(name: name,breed: breed)
       dog.save
   end 
   end
